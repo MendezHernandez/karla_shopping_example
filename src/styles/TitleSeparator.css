@@ -1,0 +1,38 @@
+.title-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  margin: 20px 0;
+}
+
+.title-separator > h2 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.title-separator > h2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: var(--white-color);
+  top: 50%;
+  margin-left: -80px;
+}
+
+.title-separator > h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: var(--white-color);
+  top: 50%;
+  margin-left: 20px;
+}

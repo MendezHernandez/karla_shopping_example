@@ -1,0 +1,43 @@
+.card-product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--black-color);
+  padding: 10px 0;
+  gap: 20px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.card-product > img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+}
+
+.card-product > h3 {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.card-product p {
+  margin: 0 10px;
+}
+
+.price {
+  color: var(--secondary-color);
+}
+
+.card-product:hover {
+  border-color: var(--primary-color);
+}
+
+.card-product:hover > h3 {
+  background-color: var(--primary-color);
+}
