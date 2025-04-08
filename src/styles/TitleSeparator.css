@@ -17,7 +17,7 @@
   letter-spacing: 5px;
 }
 
-.title-separator > h2::before {
+/* .title-separator > h2::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -35,4 +35,4 @@
   background-color: var(--white-color);
   top: 50%;
   margin-left: 20px;
-}
+} */

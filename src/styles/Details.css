@@ -5,8 +5,8 @@
 }
 
 .ctn-main-img {
-  width: 500px;
-  height: 500px;
+  max-width: 500px;
+  max-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,6 @@
 
 .ctn-imgs {
   display: flex;
-  flex-direction: column;
   gap: 4px;
 }
 
@@ -58,4 +57,21 @@
 .available {
   color: var(--tertiary-color);
   font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ctn-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ctn-smalls-imgs {
+    display: flex;
+  }
 }

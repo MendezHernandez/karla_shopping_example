@@ -36,28 +36,31 @@ const Details = () => {
       <TitleSeparator text={product().name.toUpperCase()} />
       <section className="details-container">
         <div className="ctn-imgs">
-          <img
-            onClick={() => changeMainImg(product().img)}
-            className="small-img"
-            src={product().img}
-            alt=""
-          />
-          {product().imgs &&
-            product().imgs.map((item, index) => {
-              return (
-                <img
-                  onClick={() => changeMainImg(item)}
-                  className="small-img"
-                  src={item}
-                  key={index}
-                  alt=""
-                />
-              );
-            })}
+          <div className="ctn-smalls-imgs">
+            <img
+              onClick={() => changeMainImg(product().img)}
+              className="small-img"
+              src={product().img}
+              alt=""
+            />
+            {product().imgs &&
+              product().imgs.map((item, index) => {
+                return (
+                  <img
+                    onClick={() => changeMainImg(item)}
+                    className="small-img"
+                    src={item}
+                    key={index}
+                    alt=""
+                  />
+                );
+              })}
+          </div>
+          <div className="ctn-main-img">
+            <img className="main-img-details" src={mainImg} alt="" />
+          </div>
         </div>
-        <div className="ctn-main-img">
-          <img className="main-img-details" src={mainImg} alt="" />
-        </div>
+
         <section className="ctn-data-product">
           <p>{product().description}</p>
           <p className="price">Precio: {product().price} MXN</p>
